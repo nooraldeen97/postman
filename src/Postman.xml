@@ -8,13 +8,17 @@
     <icon/>
     <properties>
         <propertyGroup caption="General">
-            <property key="nameText" type="string" required="false">
-                <caption>Name</caption>
-                <description>Your name</description>
+            <property key="urltext" type="string" required="false">
+                <caption>URL</caption>
+                <description>Api URL</description>
             </property>
-              <property key="AgeText" type="string" required="false">
-                <caption>Age</caption>
-                <description>Your age</description>
+              <property key="textName" type="string" required="false">
+                <caption>Text name</caption>
+                <description>Text name</description>
+            </property>
+             <property key="imgKey" type="string" required="false">
+                <caption>Image Key</caption>
+                <description>Image Key</description>
             </property>
         </propertyGroup>
     </properties>

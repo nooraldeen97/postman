@@ -6,6 +6,6 @@
         </widgetFiles>
         <files>
             <file path="mendix/postman"/>
-        </files>
+        </files>    
     </clientModule>
 </package>
