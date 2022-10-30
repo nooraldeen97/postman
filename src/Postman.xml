@@ -1,24 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
-<widget id="mendix.postman.Postman" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
-        supportedPlatform="Web"
-        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+<?xml version="1.0" encoding="utf-8" ?>
+<widget
+    id="mendix.postman.Postman"
+    pluginWidget="true"
+    needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
     <name>Postman</name>
     <description>it get data from api</description>
-    <icon/>
+    <icon />
     <properties>
         <propertyGroup caption="General">
             <property key="urltext" type="string" required="false">
                 <caption>URL</caption>
                 <description>Api URL</description>
             </property>
-              <property key="textName" type="string" required="false">
+            <property key="textName" type="string" required="false">
                 <caption>Text name</caption>
                 <description>Text name</description>
             </property>
-             <property key="imgKey" type="string" required="false">
+            <property key="imgKey" type="string" required="false">
                 <caption>Image Key</caption>
                 <description>Image Key</description>
+            </property>
+            <property key="items" type="datasource" isList="true" required="true">
+                <caption>Items</caption>
+                <description>List of items</description>
+            </property>
+            <property key="widgetList" type="widgets" required="true" dataSource="items">
+                <caption>Content</caption>
+                <description>Widgets using data source</description>
             </property>
         </propertyGroup>
     </properties>
